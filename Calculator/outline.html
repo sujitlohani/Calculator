@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="skin.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <input type="text" id="result" readonly value="0" />
+    </div>
+    <div id="company-name">NIKON</div>
+    <div class="buttons">
+
+    <div class = "row">
+        <button class = "btn" onclick = "appendSymbol('9')">9</button>
+        <button class = "btn" onclick = "appendSymbol('8')">8</button>
+        <button class = "btn" onclick = "appendSymbol('7')">7</button>
+        <button class = "btn operator" onclick = "setOperator('*')">x</button>
+    </div>
+    <div class = "row">
+      <button class = "btn" onclick = "appendSymbol('6')">6</button>
+      <button class = "btn" onclick = "appendSymbol('5')">5</button>
+      <button class = "btn" onclick = "appendSymbol('4')">4</button>
+      <button class = "btn operator" onclick = "setOperator('/')">÷</button>
+    </div>
+    <div class = "row">
+      <button class = "btn" onclick = "appendSymbol('3')">3</button>
+      <button class = "btn" onclick = "appendSymbol('2')">2</button>
+      <button class = "btn" onclick = "appendSymbol('1')">1</button>
+      <button class = "btn" onclick = "clearAll()">Clear</button>
+    </div>
+    <div class = "row">
+      <button class = "btn zero" onclick = "appendSymbol('0')">0</button>
+      <button class = "btn operator" onclick = "setOperator('+')">+</button>
+      <button class = "btn operator" onclick = "setOperator('-')">-</button>
+      <button class = "btn equals" onclick = "calculate()">Enter</button>
+    </div> 
+    </div>
+
+  </div>
+  <script src="feature.js"></script>
+</body>
+</html>
